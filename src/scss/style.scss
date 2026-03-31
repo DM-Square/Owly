@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
   background-color: $color-surface;
   color: $color-text-primary;
@@ -35,6 +35,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   transition: all 0.3s ease;
   &:hover {
     text-shadow: 0 0 3px rgba($color-primary-700, 0.5);
