@@ -8,9 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+
+# Build outputs
 dist
 dist-ssr
-*.local
+assets/css
 
 # Test coverage
 coverage
@@ -19,6 +21,9 @@ coverage
 # Environment variables
 .env.local
 .env.*.local
+
+# Deprecated folders
+src/img/
 
 # Editor directories and files
 .vscode/*
