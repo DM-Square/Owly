@@ -1,0 +1,66 @@
+// ============================================================
+// COLOR PALETTE - Owly App
+// ============================================================
+
+// PRIMARY COLORS
+$color-primary-500: #3d8fd4; // Pulsante, link
+$color-primary-700: #1a6bb0; // Hover, titoli libro
+
+// ACCENT COLORS
+$color-accent-400: #fac750; // Accento / brand
+
+// NEUTRAL COLORS - Background
+$color-surface: #fafaf9; // Sfondo, card
+$color-muted-bg: #f2f0eb; // Dettaglio / descrizione
+$color-border: #c8c5bc; // Input, card border
+
+// TEXT COLORS
+$color-text-primary: #1e1d1b; // Corpo, descrizione
+$color-text-secondary: #6b6962; // Autori, placeholder
+
+// ============================================================
+// CSS CUSTOM PROPERTIES (per facile accesso in JS/HTML)
+// ============================================================
+:root {
+  // Primary
+  --color-primary-500: #{$color-primary-500};
+  --color-primary-700: #{$color-primary-700};
+
+  // Accent
+  --color-accent-400: #{$color-accent-400};
+
+  // Neutral
+  --color-surface: #{$color-surface};
+  --color-muted-bg: #{$color-muted-bg};
+  --color-border: #{$color-border};
+
+  // Text
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+}
+
+// ============================================================
+// UTILITY MIXINS
+// ============================================================
+
+@mixin button-base {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+@mixin input-base {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+@mixin card-base {
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}

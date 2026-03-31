@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Owly - Find your Booook</title>
   </head>
   <body>
-    <div id="loaderDiv">
-      <div class="searchContainer">
-        <h1>Owly - Find your Booook</h1>
-        <p>Welcome to Owly, your ultimate book search companion!</p>
-        <input
-          type="text"
-          id="searchInput"
-          name="search"
-          placeholder="Enter a book genre..."
-        />
-        <button id="searchButton">Search</button>
-        <div id="searchResults"></div>
-      </div>
+    <div class="searchContainer">
+      <h1>Owly - Find your Booook</h1>
+      <p>Welcome to Owly, your ultimate book search companion!</p>
+      <input
+        type="text"
+        id="searchInput"
+        name="search"
+        placeholder="Enter a book genre..."
+      />
+      <p id="searchAlert" class="searchAlert hidden"></p>
+      <button id="searchButton">Search</button>
+      <p id="searchResultsTitle" class="hidden"></p>
+      <div id="searchResults"></div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>

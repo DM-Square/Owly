@@ -3,12 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
-  background: linear-gradient(
-    180deg,
-    rgb(0, 0, 0),
-    rgb(70, 10, 90),
-    rgb(0, 0, 0)
-  );
+  background-color: #f8f9fa;
+  color: #2b2d42;
+}
+
+.hidden {
+  display: none;
 }
 
 .searchContainer {
@@ -21,18 +21,19 @@ body {
   h1 {
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: #3a6ea5;
   }
 
   p {
     text-align: center;
     margin-top: 10px;
-    color: white;
+    color: #2b2d42;
   }
 }
 
 input {
   display: block;
+  background-color: #d7d7d7;
   margin: 20px auto;
   padding: 10px;
   width: 80%;
@@ -40,10 +41,15 @@ input {
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 
   &:hover {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px #3a6ea5;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #3a6ea5;
   }
 }
 button {
@@ -52,57 +58,124 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: rgb(70, 10, 90);
-  color: white;
+  background-color: #3a6ea5;
+  color: #f5f5f5;
   border: none;
   border-radius: 5px;
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: rgb(90, 30, 110);
+    background-color: #f4c542;
   }
   &:active {
-    background-color: rgba(40, 40, 40, 0.8);
+    background-color: #1d4168;
   }
 }
 
 .bookItem {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(58, 110, 165, 0.5);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin: 0.25rem;
-  border: 2px solid rgba(70, 10, 90, 0.5);
-  padding: 0.5rem;
-  width: 80%;
-  max-width: 300px;
-  max-height: 300px;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+  border: 2px solid rgba(58, 110, 165, 0.5);
+  padding: 1rem;
+  width: 70%;
   border-radius: 5px;
   position: relative;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+  &:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(3px);
+  }
 
   h3 {
-    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
-    margin: 0.5rem auto;
-    text-align: center;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    margin: 0 0 0.5rem 0;
+    text-align: left;
     text-transform: uppercase;
+    color: #3a6ea5;
   }
 
   .bookAuthor {
     display: block;
-    font-size: clamp(1rem, 1.25vw, 1.5rem);
-    text-align: center;
-    margin-top: 0.25rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+    text-align: left;
+    margin: 0;
   }
 
-  .bookYear {
-    color: rgba(201, 201, 201, 0.8);
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
+  .bookInfo {
+    flex: 1;
+  }
+
+  .bookAction {
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+    font-weight: bold;
+    background-color: #3a6ea5;
+    color: #f5f5f5;
+    transition: background-color 0.2s ease;
+    &:hover {
+      background-color: #f4c542;
+    }
+    &:active {
+      background-color: #1d4168;
+    }
+  }
+}
+
+.bookDetails {
+  background-color: rgba(58, 110, 165, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .backButton {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+    background-color: #3a6ea5;
+    color: #f5f5f5;
+  }
+
+  img {
+    max-width: 150px;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0.5rem auto;
     text-align: center;
-    margin-top: 0.25rem;
-    margin-bottom: 0;
-    position: absolute;
-    right: 0.25rem;
-    bottom: 0.25rem;
+    text-transform: uppercase;
+    color: #3a6ea5;
+  }
+
+  .bookDescriptionTitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .bookDescription {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
   }
 }
 
