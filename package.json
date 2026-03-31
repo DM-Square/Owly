@@ -8,9 +8,11 @@
     "dev": "vite",
     "build": "npm run optimize-images && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass-embedded": "^1.98.0",
     "sharp": "^0.34.5",
     "vite": "^8.0.1",
