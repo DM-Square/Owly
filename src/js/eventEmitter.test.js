@@ -3,6 +3,7 @@ import emitter from "./eventEmitter";
 
 describe("EventEmitter", () => {
   beforeEach(() => {
+    // Reset degli observers prima di ogni test
     emitter.observers = {};
   });
 
