@@ -203,7 +203,7 @@ npm test:ui     # Interfaccia visuale Vitest
 ## 💻 Demo
 
 L'app è disponibile su GitHub Pages:
-👉 [https://dm-square.github.io/owly-app](https://dm-square.github.io/owly-app)
+👉🏻 [https://dm-square.github.io/owly-app](https://dm-square.github.io/owly-app)
 
 ---
 
