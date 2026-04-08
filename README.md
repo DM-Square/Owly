@@ -7,7 +7,7 @@
 ![SCSS](https://img.shields.io/badge/SCSS-style-CC6699?logo=sass&logoColor=white)
 ![Open Library](https://img.shields.io/badge/API-Open%20Library-blue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyek0xMSAxN0g5VjdoMnYxMHptNCAwaC0yVjdoMnYxMHoiLz48L3N2Zz4=)
 ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
-[![Live Demo](https://img.shields.io/badge/🦉%20Live%20Demo-Prova%20Owly-success?style=for-the-badge)](https://dm-square.github.io/owly-app)
+[![Live Demo](https://img.shields.io/badge/🦉%20Live%20Demo-Prova%20Owly-success?style=for-the-badge)](https://dm-square.github.io/Owly)
 
 Owly è un'applicazione web che ti aiuta a scoprire libri in base al genere che preferisci. Basta inserire un genere nella barra di ricerca e Owly penserà al resto!
 
@@ -203,7 +203,7 @@ npm test:ui     # Interfaccia visuale Vitest
 ## 💻 Demo
 
 L'app è disponibile su GitHub Pages:
-👉🏻 [https://dm-square.github.io/owly-app](https://dm-square.github.io/owly-app)
+👉🏻 [https://dm-square.github.io/Owly](https://dm-square.github.io/Owly)
 
 ---
 
