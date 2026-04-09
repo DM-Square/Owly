@@ -61,9 +61,9 @@ src/js/
 ├── api.js                  # API pura: fetch dati, nessuna dipendenza
 ├── eventEmitter.js         # Singleton + Observer pattern
 ├── searchController.js     # Orchestrazione ricerca + async/await
-├── stateManager.js         # Gestione stato app (SRP)
+├── stateManager.js         # Gestione stato app
 ├── UIRenderer.js           # Rendering UI + fieldMapper
-├── main.js                 # Entry point: orchestrator centrale (Facade)
+├── main.js                 # Orchestrator centrale
 └── __tests__/
     ├── api.test.js         # 4 test API pure functions
     ├── eventEmitter.test.js # 4 test Singleton + Observer
