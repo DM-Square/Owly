@@ -137,7 +137,7 @@ npm run deploy
 ## 📁 Struttura del progetto
 
 ```
-owly-app/
+Owly/
 ├── public/                          # Asset statici
 ├── scripts/
 │   └── optimize-images.js           # Ottimizzazione immagini
