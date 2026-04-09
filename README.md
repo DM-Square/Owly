@@ -83,16 +83,6 @@ searchController emette "booksLoaded"
 main.js ascolta e coordina (setCurrentBooks, renderBooks, ecc.)
 ```
 
-### Design Patterns:
-
-- **Singleton**: EventEmitter (istanza única globale)
-- **Observer**: Event-driven communication tra moduli
-- **MVC**: Model (StateManager) → View (UIRenderer) ← Controller (SearchController)
-- **Facade**: main.js orchestra la complessità
-- **Module**: ESM modules con scope privato
-
----
-
 ## 🌐 API utilizzata
 
 Owly si appoggia alla **[Open Library API](https://openlibrary.org/developers/api)**, gratuita e senza necessità di autenticazione.
